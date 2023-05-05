@@ -14,3 +14,20 @@ def sum(num1, num2):
   resultado = resultado_Prov / num_Count          
 
   return resultado
+
+def min(num1, num2):
+
+  num01 = num1
+  num02 = num2
+  num_Count = 1
+
+  while num01 != int(num01) or num02 != int(num02):
+
+    num01 *= 10
+    num02 *= 10
+    num_Count *= 10 
+
+  resultado_Prov = num01 - num02
+  resultado = resultado_Prov / num_Count          
+
+  return resultado
