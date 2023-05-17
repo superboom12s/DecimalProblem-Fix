@@ -266,6 +266,21 @@ def String_Div(num1, num2):
 
 def help(function=""):
 
+  """
+    This is a library that deals with decimal problems in Python 3.
+          For getting help you can use the help() function but you have to
+          enter an input inside of help() (Example: help(\"sum()\")).
+          This is the 1.3.0 version and these are the functions:
+          sum()
+          min()
+          String_Sum()
+          String_Min()
+          String_Mult()
+          String_Div()
+          help()
+  :param function: any library function (Example: "sum()")
+  :return: Prints the help
+  """
   if function:
     if function == "sum()":
       print("This function fixes the way to add decimal numbers of Python.\nParameter 1: number one (integer or float)\n number two (integer or float)\nCorrect result (can be an integer or a float) Example: sum(0.1,0.2)")
@@ -315,4 +330,3 @@ def help(function=""):
           "String_Mult()\n"
           "String_Div()\n"
           "help()\n")
-
