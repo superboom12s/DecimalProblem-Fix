@@ -307,14 +307,15 @@ def help(function=""):
             "String_Div()\n"
             "help()\n")
     elif function == "Test" or "test" or "test()" or "Sum_Test()" or "Min_Test()" or "String_Sum_Test()" or "String_Min_Test()" or "String_Mult_Test()" or "String_Div_Test()":
-      print("Any test function will print the library result with Python's one."
+      print("\n\n\nAny test function will print the library result with Python's one."
             "\nThese are the test functions:"
             "\nSum_Test()"
             "\nMin_Test()"
             "\nString_Sum_Test()"
             "\nString_Min_Test()"
             "\nString_Mult_Test()"
-            "\nString_Div_Test()")
+            "\nString_Div_Test()"
+            "\n\nFor using this you should introduce two values. (example: Sum_Test(1, 3.2))\n\n")
     else:
       print("The help input has to be one of the actual functions, try with\n"
             "these ones:"
@@ -325,7 +326,6 @@ def help(function=""):
             "String_Mult()\n"
             "String_Div()\n"
             "help()\n")
-
 
   else:
     print("This is a library that deals with decimal problems in Python 3.\n"
@@ -338,7 +338,8 @@ def help(function=""):
           "String_Min()\n"
           "String_Mult()\n"
           "String_Div()\n"
-          "help()\n")
+          "help()\n"
+          "test\n")
 
 def Sum_Test(num1, num2):
   print("\n\n\nLibrary says that this equals to: "+str(sum(num1, num2))+"\nand Python 3 says that this equals to: "+str(num1 + num2))
@@ -357,4 +358,3 @@ def String_Mult_Test(num1, num2):
 
 def String_Div_Test(num1, num2):
   print("\n\n\nLibrary says that this equals to: "+str(String_Div(num1, num2))+"\nand Python 3 says that this equals to: "+str(float(num1) / float(num2)))
-  
