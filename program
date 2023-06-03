@@ -357,3 +357,4 @@ def String_Mult_Test(num1, num2):
 
 def String_Div_Test(num1, num2):
   print("\n\n\nLibrary says that this equals to: "+str(String_Div(num1, num2))+"\nand Python 3 says that this equals to: "+str(float(num1) / float(num2)))
+  
