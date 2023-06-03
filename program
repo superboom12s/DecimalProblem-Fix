@@ -306,6 +306,15 @@ def help(function=""):
             "String_Mult()\n"
             "String_Div()\n"
             "help()\n")
+    elif function == "Test" or "test" or "test()" or "Sum_Test()" or "Min_Test()" or "String_Sum_Test()" or "String_Min_Test()" or "String_Mult_Test()" or "String_Div_Test()":
+      print("Any test function will print the library result with Python's one."
+            "\nThese are the test functions:"
+            "\nSum_Test()"
+            "\nMin_Test()"
+            "\nString_Sum_Test()"
+            "\nString_Min_Test()"
+            "\nString_Mult_Test()"
+            "\nString_Div_Test()")
     else:
       print("The help input has to be one of the actual functions, try with\n"
             "these ones:"
@@ -330,3 +339,21 @@ def help(function=""):
           "String_Mult()\n"
           "String_Div()\n"
           "help()\n")
+
+def Sum_Test(num1, num2):
+  print("\n\n\nLibrary says that this equals to: "+str(sum(num1, num2))+"\nand Python 3 says that this equals to: "+str(num1 + num2))
+
+def Min_Test(num1, num2):
+  print("\n\n\nLibrary says that this equals to: "+str(min(num1, num2))+"\nand Python 3 says that this equals to: "+str(num1 - num2))
+
+def String_Sum_Test(num1, num2):
+  print("\n\n\nLibrary says that this equals to: "+str(String_Sum(num1, num2))+"\nand Python 3 says that this equals to: "+str(float(num1) + float(num2)))
+
+def String_Min_Test(num1, num2):
+  print("\n\n\nLibrary says that this equals to: "+str(String_Min(num1, num2))+"\nand Python 3 says that this equals to: "+str(float(num1) - float(num2)))
+
+def String_Mult_Test(num1, num2):
+  print("\n\n\nLibrary says that this equals to: "+str(String_Mult(num1, num2))+"\nand Python 3 says that this equals to: "+str(float(num1) * float(num2)))
+
+def String_Div_Test(num1, num2):
+  print("\n\n\nLibrary says that this equals to: "+str(String_Div(num1, num2))+"\nand Python 3 says that this equals to: "+str(float(num1) / float(num2)))
