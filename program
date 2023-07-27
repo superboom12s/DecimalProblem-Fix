@@ -257,7 +257,7 @@ def String_Div(num1, num2):
       num01 = num01 + "0"
 
 
-  PrePreResult = int(num01) + int(num02)
+  PrePreResult = int(num01) / int(num02)
   PreResult = [letra for letra in str(PrePreResult)]
   PreResult.insert(len(PreResult)-diff, ".")
   Result = "".join(PreResult)
