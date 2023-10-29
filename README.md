@@ -14,7 +14,7 @@ Use help with test (help("test")) for getting help with test. :v
 This library is meant for people who just doesnt like maths but still need them, specifically decimals.
 If you are more skilled at maths, you can just use fractions, but you can still using this library for irrational numbers, for example, as them require various values if you dont wanna use simple decimal numbers.
 
-I should make this library compatible with fractions, but im way too lazy and no one is going to use this library anyway, im so sure that i bet that if you are really reading this, is because you are just very curius with computer's decimal problem and if you download this library, is just for testing that it actually works. If this is your case, i appreciate it anyways, thanks!
+I should make this library compatible with fractions (the divide feature is bugged and doesnt work), but im way too lazy and no one is going to use this library anyway, im so sure that i bet that if you are really reading this, is because you are just very curius with computer's decimal problem and if you download this library, is just for testing that it actually works. If this is your case, i appreciate it anyways, thanks!
 # Getting help with the library
 If you dont know how to use something, just use help() and it should help you.
 You can also specify on what to get help, just use help(parameter).
