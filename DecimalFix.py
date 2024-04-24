@@ -256,7 +256,7 @@ def help(function=""):
     This is a library that deals with decimal problems in Python 3.
           For getting help you can use the help() function but you have to
           enter an input inside of help() (Example: help(\"sum()\")).
-          This is the 1.3.0 version and these are the functions:
+          This is the 1.5.2 version and these are the functions:
           sum()
           min()
           String_Sum()
@@ -284,7 +284,7 @@ def help(function=""):
       print("This is a library that deals with decimal problems in Python 3.\n"
             "For getting help you can use the help() function but you have to\n"
             "enter an input inside of help() (Example: help(\"Sum()\")).\n\n"
-            "This is the 1.4.4 version and these are the functions:\n"
+            "This is the 1.5.2 version and these are the functions:\n"
             "sum()\n"
             "min()\n"
             "String_Sum()\n"
@@ -318,7 +318,7 @@ def help(function=""):
     print("This is a library that deals with decimal problems in Python 3.\n"
           "For getting help you can use the help() function but you have to\n"
           "enter an input inside of help() (Example: help(\"sum()\")).\n\n"
-          "This is the 1.3.0 version and these are the functions:\n"
+          "This is the 1.5.2 version and these are the functions:\n"
           "sum()\n"
           "min()\n"
           "String_Sum()\n"
@@ -326,7 +326,7 @@ def help(function=""):
           "String_Mult()\n"
           "String_Div()\n"
           "help()\n"
-          "test\n")
+          "test()\n")
 
 
 def sum_Test(num1=0.1, num2=0.2):
