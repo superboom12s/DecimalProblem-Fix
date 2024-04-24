@@ -1,4 +1,4 @@
-# **Python-decimal-problem-fix**
+# **DecimalProblem-Fix 1.5.2**
 
 This library **fixes two decimal problems** with Python 3:
 
