@@ -253,45 +253,25 @@ def String_Div(num1, num2):
 def help(function=""):
 
   """
-    This is a library that deals with decimal problems in Python 3.
-          For getting help you can use the help() function but you have to
-          enter an input inside of help() (Example: help(\"sum()\")).
-          This is the 1.5.2 version and these are the functions:
-          sum()
-          min()
-          String_Sum()
-          String_Min()
-          String_Mult()
-          String_Div()
-          help()
-  :param function: any library function (Example: "sum()")
+    Provides some help with the library.
+    Best is to read documentation.
+    
+  :param function: any library function.
   :return: Prints the help
   """
   if function:
     if function == "sum()":
-      print("This function fixes the way to add decimal numbers of Python.\nParameter 1: number one (integer or float)\n number two (integer or float)\nCorrect result (can be an integer or a float) Example: sum(0.1,0.2)")
+      print("This function fixes the way to add decimal numbers.\nParameter 1: number one (integer or float)\nParameter 2: (integer or float)\nReturns a correct result (can be an integer or a float) Example: sum(0.1,0.2)")
     elif function == "min()":
-      print("This function fixes the way to add decimal numbers of Python.\nParameter 1: number one (integer or float)\nParameter 2: number two (integer or float)\nCorrect result (can be an integer or a float) Example: min(0.1,0.2)")
+      print("This function fixes the way to substract decimal numbers.\nParameter 1: number one (integer or float)\nParameter 2: number two (integer or float)\nReturns a correct result (can be an integer or a float) Example: min(0.1,0.2)")
     elif function == "String_Sum()":
-      print("This function fixes the way to deal with long decimal numbers of Python,\nturning them into strings should avoid the auto-integer transformation\nand this function let you add string numbers to other string numbers.\n\n      Input example: String_Sum(\"1.913\", \"14\")\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
+      print("This function fixes the way to deal with long decimal numbers,\nthis function let you add string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "String_Min()":
-      print("This function fixes the way to deal with long decimal numbers of Python,\nturning them into strings should avoid the auto-integer transformation\nand this function let you substract string numbers to other string numbers.\n\n      Input example: String_Min(\"1.913\", \"14\")\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
+      print("This function fixes the way to deal with long decimal numbers,\nthis function let you substract string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "String_Mult()":
-      print("This function fixes the way to deal with long decimal numbers of Python,\nturning them into strings should avoid the auto-integer transformation\nand this function let you multiply string numbers to other string numbers.\n\n      Input example: String_Mult(\"1.913\", \"14\")\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
+      print("This function fixes the way to deal with long decimal numbers,\nthis function let you multiply string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "String_Div()":
-      print("This function fixes the way to deal with long decimal numbers of Python,\nturning them into strings should avoid the auto-integer transformation\nand this function let you divide string numbers to other string numbers.\n\n      Input example: String_Div(\"1.913\", \"14\")\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
-    elif function == "help()":
-      print("This is a library that deals with decimal problems in Python 3.\n"
-            "For getting help you can use the help() function but you have to\n"
-            "enter an input inside of help() (Example: help(\"Sum()\")).\n\n"
-            "This is the 1.5.2 version and these are the functions:\n"
-            "sum()\n"
-            "min()\n"
-            "String_Sum()\n"
-            "String_Min()\n"
-            "String_Mult()\n"
-            "String_Div()\n"
-            "help()\n")
+      print("This function fixes the way to deal with long decimal numbers,\nthis function let you divide string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "Test" or "test" or "test()" or "sum_Test()" or "min_Test()" or "String_Sum_Test()" or "String_Min_Test()" or "String_Mult_Test()" or "String_Div_Test()":
       print("\n\n\nAny test function will print the library result with Python's one."
             "\nThese are the test functions:"
@@ -303,22 +283,11 @@ def help(function=""):
             "\nString_Div_Test()"
             "\nEverything_Test()"
             "\n\nFor using this, you can introduce two values (example: sum_Test(1, 3.2))\n\n")
-    else:
-      print("The help input has to be one of the actual functions, try with\n"
-            "these ones:"
-            "sum()\n"
-            "min()\n"
-            "String_Sum()\n"
-            "String_Min()\n"
-            "String_Mult()\n"
-            "String_Div()\n"
-            "help()\n")
-
   else:
-    print("This is a library that deals with decimal problems in Python 3.\n"
+    print("This is a library that deals with decimal problems.\n"
           "For getting help you can use the help() function but you have to\n"
           "enter an input inside of help() (Example: help(\"sum()\")).\n\n"
-          "This is the 1.5.2 version and these are the functions:\n"
+          "This is the 1.5.4 version and these are the functions:\n"
           "sum()\n"
           "min()\n"
           "String_Sum()\n"
