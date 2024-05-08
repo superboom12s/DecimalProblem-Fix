@@ -347,8 +347,6 @@ def String_Mult_Test(num1=0.1, num2=0.2):
 def String_Div_Test(num1=0.1, num2=0.2):
   print(f"\n\nLibrary says that [str] {num1} / {num2} equals to: "+str(String_Div(num1, num2))+"\nand Python 3 says that it equals to: "+str(float(num1) / float(num2)))
 
-def Test_Test(num1="", num2=""):
-  print("\n\n\nYou are really smart, dont you are?")
 
 def Library_Test(num1=0.1, num2=0.2):
   sum_Test(num1, num2)
