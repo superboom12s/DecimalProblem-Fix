@@ -255,9 +255,9 @@ def help(function=""):
   """
     Provides some help with the library.
     Best is to read documentation.
-    
+
   :param function: any library function.
-  :return: Prints the help
+  :return: Prints helping dialogs
   """
   if function:
     if function == "sum()":
@@ -294,33 +294,4 @@ def help(function=""):
           "String_Min()\n"
           "String_Mult()\n"
           "String_Div()\n"
-          "help()\n"
-          "test()\n")
-
-
-def sum_Test(num1=0.1, num2=0.2):
-  print(f"\n\nLibrary says that {num1} + {num2} equals to: "+str(sum(num1, num2))+"\nand Python 3 says that it equals to: "+str(num1 + num2))
-
-def min_Test(num1=0.1, num2=0.2):
-  print(f"\n\nLibrary says that {num1} - {num2} equals to: "+str(min(num1, num2))+"\nand Python 3 says that it equals to: "+str(num1 - num2))
-
-def String_Sum_Test(num1=0.1, num2=0.2):
-  print(f"\n\nLibrary says that [str] {num1} + {num2} equals to: "+str(String_Sum(num1, num2))+"\nand Python 3 says it this equals to: "+str(float(num1) + float(num2)))
-
-def String_Min_Test(num1=0.1, num2=0.2):
-  print(f"\n\nLibrary says that [str] {num1} - {num2} equals to: "+str(String_Min(num1, num2))+"\nand Python 3 says that it equals to: "+str(float(num1) - float(num2)))
-
-def String_Mult_Test(num1=0.1, num2=0.2):
-  print(f"\n\nLibrary says that [str] {num1} * {num2} equals to: "+str(String_Mult(num1, num2))+"\nand Python 3 says that it equals to: "+str(float(num1) * float(num2)))
-
-def String_Div_Test(num1=0.1, num2=0.2):
-  print(f"\n\nLibrary says that [str] {num1} / {num2} equals to: "+str(String_Div(num1, num2))+"\nand Python 3 says that it equals to: "+str(float(num1) / float(num2)))
-
-
-def Library_Test(num1=0.1, num2=0.2):
-  sum_Test(num1, num2)
-  min_Test(num1, num2)
-  String_Sum_Test(num1, num2)
-  String_Min_Test(num1, num2)
-  String_Mult_Test(num1, num2)
-  String_Div_Test(num1, num2)
+          "help()\n")
