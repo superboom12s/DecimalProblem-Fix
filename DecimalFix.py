@@ -52,7 +52,7 @@ def String_add(num1, num2):
     float(num1)
     float(num2)
   except:
-    print("Error with String_Sum inputs, one or both inputs are text\ninstead of String-numbers")
+    raise ValueError("Error with String_add inputs, one or both inputs are text\ninstead of String-numbers")
 
   num1_Separado = num1.split(".")
   num2_Separado = num2.split(".")
@@ -107,7 +107,7 @@ def String_sub(num1, num2):
     float(num01)
     float(num02)
   except:
-    print("Error with String_Min inputs, one or both inputs are text\ninstead of String-numbers")
+    raise ValueError("Error with String_sub inputs, one or both inputs are text\ninstead of String-numbers")
 
   num01_Separado = num01.split(".")
   num02_Separado = num02.split(".")
@@ -140,13 +140,13 @@ def String_sub(num1, num2):
 
   return Result
 
-def String_Mult(num1, num2):
+def String_mult(num1, num2):
   """
       This function fixes the way to deal with long decimal numbers of Python,
       turning them into strings should avoid the auto-integer transformation
       and this function let you add multiply numbers to other string numbers.
 
-      Input example: String_Mult("1.913", "14")
+      Input example: String_mult("1.913", "14")
 
       :param num1: number one (String-float or String-integer)
       :param num2: number two (String-float or String-integer)
@@ -160,7 +160,7 @@ def String_Mult(num1, num2):
     float(num01)
     float(num02)
   except:
-    print("Error with String_Mult inputs, one or both inputs are text\ninstead of String-numbers")
+    raise ValueError("Error with String_mult inputs, one or both inputs are text\ninstead of String-numbers")
 
   num01_Separado = num01.split(".")
   num02_Separado = num02.split(".")
@@ -195,13 +195,13 @@ def String_Mult(num1, num2):
 
   return Result
 
-def String_Div(num1, num2):
+def String_div(num1, num2):
   """
       This function fixes the way to deal with long decimal numbers of Python,
       turning them into strings should avoid the auto-integer transformation
       and this function let you divide string numbers to other string numbers.
 
-      Input example: String_Div("1.913", "14")
+      Input example: String_div("1.913", "14")
 
       :param num1: number one (String-float or String-integer)
       :param num2: number two (String-float or String-integer)
@@ -215,7 +215,7 @@ def String_Div(num1, num2):
     float(num01)
     float(num02)
   except:
-    print("Error with String_Div inputs, one or both inputs are text\ninstead of String-numbers")
+    raise ValueError("Error with String_div inputs, one or both inputs are text\ninstead of String-numbers")
 
   num01_Separado = num01.split(".")
   num02_Separado = num02.split(".")
@@ -268,18 +268,18 @@ def help(function=""):
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you add string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "String_sub()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you substract string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
-    elif function == "String_Mult()":
+    elif function == "String_mult()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you multiply string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
-    elif function == "String_Div()":
+    elif function == "String_div()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you divide string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
   else:
     print("This is a library that deals with decimal problems.\n"
           "For getting help you can use the help() function but you have to\n"
           "enter an input inside of help() (Example: help(\"sum()\")).\n\n"
-          "This is the 1.7 version and these are the functions:\n"
+          "This is the 1.8 version and these are the functions:\n"
           "Dadd()\n"
           "Dsub()\n"
           "String_add()\n"
           "String_sub()\n"
-          "String_Mult()\n"
-          "String_Div()\n")
+          "String_mult()\n"
+          "String_div()\n")
