@@ -1,15 +1,11 @@
-# **DecimalProblem-Fix 1.5.2**
+# **DecimalProblem-Fix 1.7**
 
 This library **fixes two decimal problems** with Python 3:
 
 ## Adding or substracting decimal numbers:
-An _example_ of this decimal problem is _0.1 + 0.2 = 0.30000000000000004_, its obviously _0.3_ but **python says that is _0.30000000000000004_**. **This library fixes that**; when using the library funtions (`sum( number1, numer2 )` or `min( number1, number2 )`) it will always return the **correct result**.
+An _example_ of this decimal problem is _0.1 + 0.2 = 0.30000000000000004_, its obviously _0.3_ but **python says that is _0.30000000000000004_**. **This library fixes that**; when using the library funtions (`Dadd( number1, numer2 )` or `Dsub( number1, number2 )`) it will always return the **correct result**.
 ## Using laaaaarge decimals:
-When saving a **large float** into a variable or simply operating with it **it will automactly round itself**, for example, _4.99999999999999999999999999999999999999999999999_ would be stored as a _5.0_ or a _5_ (depending on your decimal library), **the solution is stored as a string but you cant operate with strings**, and if you turn it into a decimal it will be rounded into 5, but **with this library you can operate with _string-numbers_** to get the most exact result (`String_Sum()` to add, `String_Min()` to substract, `String_Mult()` to multiply and `String_Div()` to divide).
-## Testing tha library
-I dont know why would you want to test the library, but you can.
-When testing, the library will print the library result and the python's one.
-Use help with test (`help("test")`) for getting help with test.
+When saving a **large float** into a variable or simply operating with it **it will automactly round itself**, for example, _4.99999999999999999999999999999999999999999999999_ would be stored as a _5.0_ or a _5_ (depending on your decimal library), **the solution is stored as a string but you cant operate with strings**, and if you turn it into a decimal it will be rounded into 5, but **with this library you can operate with _string-numbers_** to get the most exact result (`String_add()` to add, `String_add()` to substract, `String_Mult()` to multiply and `String_Div()` to divide).
 # Why using this library
 This library is meant for people who just doesnt like maths but still need them, specifically decimals.
 If you are more skilled at maths, you can just use fractions, but you can still using this library for irrational numbers, for example, as them require various values if you dont wanna use simple decimal numbers.
