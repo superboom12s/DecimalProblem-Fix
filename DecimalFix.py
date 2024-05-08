@@ -1,4 +1,4 @@
-def sum(num1, num2):
+def Dadd(num1, num2):
 
   """
   This function fixes the way to add decimal numbers of Python.
@@ -17,7 +17,7 @@ def sum(num1, num2):
 
   return (num1 + num2) / num_Count
 
-def min(num1, num2):
+def Dsub(num1, num2):
   """
     This function fixes the way to subtract decimal numbers of Python
 
@@ -36,7 +36,7 @@ def min(num1, num2):
 
   return (num1 - num2) / num_Count
 
-def String_Sum(num1, num2):
+def String_add(num1, num2):
   """
       This function fixes the way to deal with long decimal numbers of Python,
       turning them into strings should avoid the auto-integer transformation
@@ -87,7 +87,7 @@ def String_Sum(num1, num2):
 
   return Result
 
-def String_Min(num1, num2):
+def String_sub(num1, num2):
   """
       This function fixes the way to deal with long decimal numbers of Python,
       turning them into strings should avoid the auto-integer transformation
@@ -260,38 +260,26 @@ def help(function=""):
   :return: Prints helping dialogs
   """
   if function:
-    if function == "sum()":
+    if function == "Dadd()":
       print("This function fixes the way to add decimal numbers.\nParameter 1: number one (integer or float)\nParameter 2: (integer or float)\nReturns a correct result (can be an integer or a float) Example: sum(0.1,0.2)")
-    elif function == "min()":
+    elif function == "Dsub()":
       print("This function fixes the way to substract decimal numbers.\nParameter 1: number one (integer or float)\nParameter 2: number two (integer or float)\nReturns a correct result (can be an integer or a float) Example: min(0.1,0.2)")
-    elif function == "String_Sum()":
+    elif function == "String_add()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you add string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
-    elif function == "String_Min()":
+    elif function == "String_sub()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you substract string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "String_Mult()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you multiply string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
     elif function == "String_Div()":
       print("This function fixes the way to deal with long decimal numbers,\nthis function let you divide string numbers to other string numbers.\n\n      Parameter1: numberer one (String-float or String-integer)\n      Parameter number two (String-float or String-integer)\n      Return: Correct result (String-float or String-integer)")
-    elif function == "Test" or "test" or "test()" or "sum_Test()" or "min_Test()" or "String_Sum_Test()" or "String_Min_Test()" or "String_Mult_Test()" or "String_Div_Test()":
-      print("\n\n\nAny test function will print the library result with Python's one."
-            "\nThese are the test functions:"
-            "\nsum_Test()"
-            "\nMin_Test()"
-            "\nString_Sum_Test()"
-            "\nString_Min_Test()"
-            "\nString_Mult_Test()"
-            "\nString_Div_Test()"
-            "\nEverything_Test()"
-            "\n\nFor using this, you can introduce two values (example: sum_Test(1, 3.2))\n\n")
   else:
     print("This is a library that deals with decimal problems.\n"
           "For getting help you can use the help() function but you have to\n"
           "enter an input inside of help() (Example: help(\"sum()\")).\n\n"
-          "This is the 1.5.4 version and these are the functions:\n"
-          "sum()\n"
-          "min()\n"
-          "String_Sum()\n"
-          "String_Min()\n"
+          "This is the 1.7 version and these are the functions:\n"
+          "Dadd()\n"
+          "Dsub()\n"
+          "String_add()\n"
+          "String_sub()\n"
           "String_Mult()\n"
-          "String_Div()\n"
-          "help()\n")
+          "String_Div()\n")
