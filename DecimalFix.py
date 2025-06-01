@@ -5,18 +5,25 @@ def Dadd(num1, num2):
 
   :param num1: number one (integer or float)
   :param num2: number two (integer or float)
-  :return: Correct result (can be an integer or a float)
+  :return: Result (can be an integer or a float)
   """
-  num_Count = 1
-
-  while num1 != int(num1) or num2 != int(num2):
-
-    num1 *= 10
-    num2 *= 10
-    num_Count *= 10
-
-  return (num1 + num2) / num_Count
-
+  #Tries to obtain the exponent of 10 needed to convert the integer and decimal part into an integer. If the value is a float, it will turn the number into a string, split it on the '.' and obtain the lenght of the decimal part. If its an integer, it will set it to 1, as 10**0 is equal to 1. The functions tries it with both numbers separately cause there could be a decimal and an integer number.
+  try:
+      num1ex = len(str(num1).split('.')[1])
+  except:
+      num1ex = 1
+  try:
+      num2ex = len(str(num2).split('.')[1])
+  except:
+      num2ex = 1
+    
+  #Now, it checks the number with the highest exponent to convert the numbers into integers, operate with them and then transform them into floats again to return them.      
+  if num1ex > num2ex:
+      return (num1*10**num1ex + num2*10**num1ex) / 10**num1ex
+  else:
+      return (num1*10**num2ex + num2*10**num2ex) / 10**num2ex
+     
+        
 def Dsub(num1, num2):
   """
     This function fixes the way to subtract decimal numbers of Python
@@ -25,16 +32,21 @@ def Dsub(num1, num2):
     :param num2: number two (integer or float)
     :return: Correct result (can be an integer or a float)
   """
-
-  num_Count = 1
-
-  while num1 != int(num1) or num2 != int(num2):
-
-    num1 *= 10
-    num2 *= 10
-    num_Count *= 10
-
-  return (num1 - num2) / num_Count
+  #Tries to obtain the exponent of 10 needed to convert the integer and decimal part into an integer. If the value is a float, it will turn the number into a string, split it on the '.' and obtain the lenght of the decimal part. If its an integer, it will set it to 1, as 10**0 is equal to 1. The functions tries it with both numbers separately cause there could be a decimal and an integer number.
+  try:
+      num1ex = len(str(num1).split('.')[1])
+  except:
+      num1ex = 1
+  try:
+      num2ex = len(str(num2).split('.')[1])
+  except:
+      num2ex = 1
+    
+  #Now, it checks the number with the highest exponent to convert the numbers into integers, operate with them and then transform them into floats again to return them.      
+  if num1ex > num2ex:
+      return (num1*10**num1ex - num2*10**num1ex) / 10**num1ex
+  else:
+      return (num1*10**num2ex - num2*10**num2ex) / 10**num2ex
 
 def String_add(num1, num2):
   """
