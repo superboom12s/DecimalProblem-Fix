@@ -1,4 +1,4 @@
-# **DecimalProblem-Fix 1.1**
+# **Pydepo - A solution for Decimal problems in python 3**
 
 This library **fixes two decimal problems** with Python 3:
 
