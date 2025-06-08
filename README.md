@@ -1,20 +1,45 @@
-# **Pydepo - A solution for Decimal problems in python 3**
+# Pydepo
+## A solution for Decimal problems in python 3
 
-This library **fixes two decimal problems** with Python 3:
+This library **fixes these two decimal problems** in Python 3:
 
-## Adding or substracting decimal numbers:
-An _example_ of this decimal problem is _0.1 + 0.2 = 0.30000000000000004_, its obviously _0.3_ but **python says that is _0.30000000000000004_**. **This library fixes that**; when using the library methods (`Dadd( number1, numer2 )` or `Dsub( number1, number2 )`) it will always return the **correct result**.
-## Using laaaaarge decimals:
-When saving a **large float** into a variable or simply operating with it **it will automactly round itself**, for example, _4.99999999999999999999999999999999999999999999999_ would be stored as a _5.0_ or a _5_ (depending on your decimal library), **the solution is stored as a string but you cant operate with strings**, and if you turn it into a decimal it will be rounded into 5, but **with this library you can operate with _string-numbers_** to get the most exact result `String_add()`, `String_sub()` and `String_mul()` are the only methods for now.
-# Why using this library
-This library is meant for people who just doesnt like maths but still need them, specifically decimals.
-If you are more skilled at maths, you can just use fractions, but you can still using this library for irrational numbers, for example, as them require various values if you dont wanna use simple decimal numbers.
+- Precission.
+    - Increases python precision with floats, but keeps using a hardware based decimal flotating point.
+- Memory allocation.
+    - Usually, floats have a limit of decimal characters of. But with this library, you will be able to use up to `2⁶³ - 2` digits, both integers and decimal places.
 
-I _should_ make this library compatible with fractions _(the divide feature is bugged and didnt work when it did exist)_, but im working on it.
-# Getting help with the library
-**If you dont know how to use something, just use `help()` and it should help you.**
-You can also specify on what to get help, just use `help(parameter)`.
-Also you can type the name of a function in your **IDE** and the **IDE will help you with that function** if you put you mouse on the function.
-If you still have any doubts or you find another decimal problem you can publish an issue with your problem and ill reply as fast as i can.
+## Precision
+When python operates decimal numbers, the result may not be the expected one, as it has its inprecissions.
+An example of this, may be `0.1 + 0.2`. Despite being a simple operation, python returns `0.30000000000000004`.
+This could affect equivalences, as `0.1 + 0.2 == 0.3` outputs `False`, so this could be a huge problem, but it is worse when lots of float operations are made, as this effect would accumulate.
+
+Thankfully, this library is here to fix this, as `Dadd()` and `Dsub` allows you to add and substract decimal values while keeping the preccision on the result.
+
+### Usage:
+-  `Dadd( number1 , number2 ) == The correct result of number1 + number2`
+-  `Dsub( number1 , number2 ) == The correct result of number1 - number2`
+
+The numbers used for those methods can be both floats or integers and the output can also be both floats or integers.
+> [!TIP]
+> There isn't any functions for multiplications or divisions, as they aren't needed. Python's built in operations are good enough, even if the divisions may cause huge inprecissions when the amount of numbers it has to generate is a bit big.
+
+## Memory Allocation:
+Floats with long decimal characters will be rounded, as they do have a limit for their allocation. This makes operations that require long decimal values to be unable to be done or allocated in a variable. To prevent this, this library uses strings _(As they won't be rounded)_ to allocate floats and operate with them.  
+An example of this problem could be `4.9999999999999999`, that would be instantly converted into `5.0`.
+
+This will let the user to save up to `2⁶³ - 2` digits on a single variable (or `2³¹ - 2` on 32 bit systems), instead of the usual `15` decimal places python lets us to store.
+> [!NOTE]
+> You can obtain the maximun size of the decimal number for your computer with the method `sys.getsizeof()` _(not from this library)_.
+
+### Usage:
+-  `String_add( number1 , number2 ) == The correct result of number1 + number2`
+-  `String_sub( number1 , number2 ) == The correct result of number1 - number2`
+-  `String_mul( number1 , number2 ) == The correct result of number1 * number2`
+
+The numbers used for those methods can be floats, integers or String-numbers and the output will be a String-number.
+> [!IMPORTANT]
+> I am working on a function to divide two String-numbers, but as python's built in method is extremely inexact upon creating more than `15` numbers, I may take some days to desing a beta function or a working method.  
+> That would make posible the creation of large decimal numbers that could take advantage of this library.  
+> See issue https://github.com/superboom12s/Pydepo/issues/4
 
 🧃🧃🧃
